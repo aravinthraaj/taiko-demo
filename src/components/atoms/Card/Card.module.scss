@@ -1,0 +1,32 @@
+.card {
+  max-width: 400px;
+  background-color: $color-gray;
+  .imgWrapper {
+    width: 100%;
+    height: 275px;
+    max-height: 275px;
+    position: relative;
+  }
+  .detailsWrapper {
+    height: 275px;
+    max-height: 275px;
+    @include flex-center(column, 48px);
+    .details {
+      @include flex-center(column, 17px);
+      font-weight: $font-weight-medium;
+      .weight {
+        font-size: $font-size-xl;
+        letter-spacing: 9.6px;
+      }
+      .model {
+        font-size: $font-size-base;
+        letter-spacing: 4.8px;
+      }
+    }
+    .download {
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
