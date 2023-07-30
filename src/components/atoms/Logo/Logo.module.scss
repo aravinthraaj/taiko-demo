@@ -1,0 +1,17 @@
+.logo {
+  position: relative;
+  &.main {
+    &.regular {
+      width: 400px;
+      height: 130px;
+    }
+    &.small {
+      width: 248px;
+      height: 80px;
+    }
+  }
+  &.header {
+    width: 179px;
+    height: 40px;
+  }
+}
