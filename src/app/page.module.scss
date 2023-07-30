@@ -6,5 +6,5 @@
   p {
     color: $color-blue;
   }
-  @include flex-center(column);
+  @include flex-center(column,100px);
 }

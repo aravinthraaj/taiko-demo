@@ -8,9 +8,12 @@
   font-weight: $font-weight;
 }
 
-@mixin flex-center($direction: row) {
+@mixin flex-center($direction: row, $gap: false) {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: $direction;
+  @if $gap {
+    gap: $gap;
+  }
 }
