@@ -1,0 +1,7 @@
+.recruitPage {
+  .careersPage {
+    padding: 200px 0px;
+    @include flex-center();
+    background-color: $color-gray;
+  }
+}
