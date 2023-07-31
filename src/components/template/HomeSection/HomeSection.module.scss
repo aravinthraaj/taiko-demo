@@ -1,0 +1,51 @@
+.homeSection {
+  background-color: $color-gray;
+  width: 100%;
+  @include flex-center();
+  &.alternate {
+    background-color: $color-white;
+  }
+  .detailsWrapper {
+    padding: 200px 0px;
+    max-width: 1310px;
+    @include flex-center(row, 120px);
+    position: relative;
+    &.alternate {
+      @include flex-center(row-reverse, 120px);
+    }
+    &:after {
+      content: " ";
+      height: 100%;
+      width: 280px;
+      background-color: $color-pink;
+      display: block;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+    }
+    .imageWrapper {
+      position: relative;
+      flex: 63%;
+      height: 440px;
+      z-index: 1;
+    }
+    .details {
+      flex: 37%;
+      .text {
+        letter-spacing: 9.6px;
+        border-bottom: 8px solid $color-pink;
+        font-weight: 600;
+        font-family: $noto;
+      }
+      p {
+        font-size: $font-size-base;
+        font-weight: $font-weight-regular;
+        letter-spacing: 0.8px;
+        color: rgba($color-black, 0.8);
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}

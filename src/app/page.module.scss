@@ -1,10 +1,10 @@
 .main {
-  h1 {
-    @include font($fs-xxl);
-    color: $color-blue;
+  font-family: $noto;
+  @include flex-center(column, 0px);
+  .vehicleList {
+    display: grid;
+    width: 1280px;
+    grid-template-columns: repeat(3, 400px);
+    gap: 40px;
   }
-  p {
-    color: $color-blue;
-  }
-  @include flex-center(column,100px);
 }

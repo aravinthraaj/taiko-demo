@@ -4,13 +4,7 @@ import { Noto_Sans, Cormorant_Garamond } from "next/font/google"
 
 const noto = Noto_Sans({
   variable: "--font-noto",
-  weight: ["400", "600","100"],
-  subsets: ["latin"],
-})
-
-const cormorant = Cormorant_Garamond({
-  variable: "--font-cormorant",
-  weight: "700",
+  weight: ["400", "600", "100"],
   subsets: ["latin"],
 })
 
@@ -26,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${noto.variable} ${cormorant.variable}`}>
+      <body className={`${noto.variable}`}>
         {children}
       </body>
     </html>
