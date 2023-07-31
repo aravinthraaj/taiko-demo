@@ -58,8 +58,9 @@
     .strengthCardWrapper {
       width: 100%;
       display: flex;
-      @include flex-center(column,24px);
+      @include flex-center(column, 24px);
       z-index: 1;
+      padding: 0px 32px;
     }
     &:after {
       content: " ";
