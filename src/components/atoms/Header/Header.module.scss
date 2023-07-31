@@ -18,6 +18,9 @@
         color: $color-black;
       }
     }
+    .burgerMenu {
+      visibility: hidden;
+    }
   }
 }
 
@@ -37,6 +40,9 @@
       justify-content: space-between;
       nav {
         display: none;
+      }
+      .burgerMenu {
+        visibility: visible;
       }
     }
   }
