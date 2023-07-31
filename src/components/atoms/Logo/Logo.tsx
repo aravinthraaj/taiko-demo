@@ -16,7 +16,7 @@ const Logo = ({ variant = "main", size = "regular" }: LogoProps) => {
       case "header":
         return (
           <>
-            <Image src={LogoHeader} alt="Logo Main" />
+            <Image src={LogoHeader} alt="Logo Main" fill/>
           </>
         )
     }

@@ -14,3 +14,15 @@
   height: 8px;
   background-color: $color-pink;
 }
+
+@media (max-width: $mobile) {
+  .black {
+    height: 2px;
+  }
+  .white {
+    height: 2px;
+  }
+  .pink {
+    height: 4px;
+  }
+}

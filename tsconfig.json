@@ -23,8 +23,8 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*", "./public/*"],
-      "@Icons/*": ["./public/assets/icons/*"],
-      "@Images/*": ["./public/assets/images/*"]
+      "@Icons/*": ["./src/assets/icons/*"],
+      "@Images/*": ["./src/assets/images/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

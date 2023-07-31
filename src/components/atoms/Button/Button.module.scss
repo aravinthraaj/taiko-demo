@@ -19,3 +19,27 @@
   cursor: pointer;
   letter-spacing: 4.8px;
 }
+
+@media (max-width: $mobile) {
+  .default {
+    background-color: $color-pink;
+    border: none;
+    color: $color-white;
+    cursor: pointer;
+    padding: 4px 8px;
+    @include font($font-size-xs, $noto, $font-weight-regular);
+    @include flex-center(row, 8px);
+    letter-spacing: 0.6px;
+    box-shadow: $box-shadow-normal;
+  }
+
+  .secondary {
+    background-color: transparent;
+    padding: 0px;
+    @include font($font-size-xs, $noto, $font-weight-regular);
+    @include flex-center(row, 8px);
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.6px;
+  }
+}

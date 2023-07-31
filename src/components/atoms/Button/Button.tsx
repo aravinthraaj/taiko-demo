@@ -4,6 +4,7 @@ import styles from "./Button.module.scss"
 import PDF_ICON from "@Icons/pdf.svg"
 import RIGHT_ARROW from "@Icons/rightArrow.svg"
 import ROUNDED_RIGHT_ARROW from "@Icons/rounded-right-arrow.svg"
+import { isMobile } from "react-device-detect"
 
 import Image from "next/image"
 
@@ -43,7 +44,9 @@ const Button: FC<ButtonProps> = ({
           <>
             <Image src={PDF_ICON} alt="pdf icon" width={20} height={20} />
             {children}
-            <Image src={RIGHT_ARROW} alt="pdf icon" width={20} height={20} />
+            {!isMobile && (
+              <Image src={RIGHT_ARROW} alt="pdf icon" width={20} height={20} />
+            )}
           </>
         )
       default:

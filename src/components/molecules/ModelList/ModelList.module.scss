@@ -18,3 +18,28 @@
     gap: 40px;
   }
 }
+
+@media (max-width:$mobile){
+  .modelListWrapper {
+  width: 100%;
+  font-family: $noto;
+  .titleWrapper {
+    width: 100%;
+    .title {
+      font-size: $font-size-md;
+      font-weight: $font-weight-medium;
+      letter-spacing: 6px;
+    }
+  }
+
+  @include flex-center(column, 48px);
+  .modelList {
+    display: grid;
+    width: 380px;
+    grid-template-columns: repeat(2, 160px);
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+}
+}

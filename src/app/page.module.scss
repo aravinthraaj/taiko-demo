@@ -1,10 +1,4 @@
 .main {
   font-family: $noto;
   @include flex-center(column, 0px);
-  .vehicleList {
-    display: grid;
-    width: 1280px;
-    grid-template-columns: repeat(3, 400px);
-    gap: 40px;
-  }
 }

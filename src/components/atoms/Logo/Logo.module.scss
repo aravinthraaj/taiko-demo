@@ -15,3 +15,23 @@
     height: 40px;
   }
 }
+
+@media (max-width: $mobile){
+  .logo {
+    position: relative;
+    &.main {
+      &.regular {
+        width: 240px;
+        height: 77px;
+      }
+      &.small {
+        width: 148px;
+        height: 48px;
+      }
+    }
+    &.header {
+      width: 107px;
+      height: 24px;
+    }
+  }
+}

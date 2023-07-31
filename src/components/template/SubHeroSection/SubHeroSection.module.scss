@@ -43,3 +43,33 @@
     }
   }
 }
+
+@media (max-width: $mobile) {
+  .subHeroSection {
+
+    .overlay {
+      .overlayContainer {
+        width: 300px;
+        max-width: 300px;
+        @include flex-center(column, 36px);
+        .titleWrapper {
+          @include flex-center(column, 8px);
+          .title {
+            font-size: $font-size-lg;
+            font-weight: $font-weight-medium;
+            letter-spacing: 7.2px;
+          }
+          .subTitle {
+            font-size: $font-size-md;
+            font-weight: $font-weight-medium;
+            letter-spacing: 6px;
+          }
+        }
+        .description {
+          color: $color-black;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

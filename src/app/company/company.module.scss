@@ -78,3 +78,88 @@
     }
   }
 }
+
+@media (max-width: $mobile){
+  .companyPage {
+  font-family: $noto;
+  width: 100%;
+
+  .companyProfile {
+    padding: 80px 0px;
+    @include flex-center(column);
+    .companyDetails {
+      .title {
+        font-size: $font-size-xxl;
+        font-weight: $font-weight-medium;
+        letter-spacing: 12px;
+        text-align: center;
+        margin-bottom: 64px;
+      }
+      ul {
+        list-style: none;
+        padding: 0px 20px;
+        li {
+          margin-left: 0px;
+          padding: 16px 0px;
+          border-bottom: 1px solid #c8c8c8;
+          color: $color-black-lighter;
+          display: flex;
+          align-items: flex-start;
+          font-size: $font-size-base;
+          font-weight: 600;
+          line-height: 160%;
+          letter-spacing: 4.8px;
+
+          span {
+            flex: 25;
+            display: inline-block;
+            max-width: 250px;
+            color: $color-pink;
+            font-size: $font-size-base;
+            font-weight: $font-weight-medium;
+            letter-spacing: 4.8px;
+          }
+          p {
+            flex: 75;
+            margin: 0px;
+            text-wrap: wrap;
+            max-width: 600px;
+          }
+          &:first-child {
+            border-top: 1px solid #c8c8c8;
+          }
+        }
+      }
+    }
+  }
+  .message {
+    @include flex-center(column, 64px);
+    padding: 80px 0px;
+
+    width: 100%;
+    background-color: $color-gray;
+    .title,
+    .name {
+      font-size: $font-size-md;
+      font-weight: $font-weight-medium;
+      letter-spacing: 12px;
+      text-align: center;
+    }
+    .description {
+      max-width: 800px;
+      text-align: center;
+      font-size: $font-size-base;
+      font-weight: $font-weight-regular;
+      letter-spacing: 0.8px;
+      padding: 0px 20px;
+    }
+    .imageWrapper {
+      position: relative;
+      width: 160px;
+      height: 160px;
+      overflow: hidden;
+      border-radius: 50%;
+    }
+  }
+}
+}

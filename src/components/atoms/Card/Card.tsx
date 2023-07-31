@@ -36,20 +36,6 @@ const Card = ({ data }: { data: CardProps }) => {
         </div>
       </div>
     </div>
-    // <div className={styles.card}>
-    //   <div className={styles.imgWrapper}>
-    //     <Image src={vehicle} alt="vehicle image" fill objectFit="contain" />
-    //   </div>
-    //   <div className={styles.detailsWrapper}>
-    //     <div className={styles.details}>
-    //       <div className={styles.weight}>400 t</div>
-    //       <div className={styles.model}>タダノ　ATF400G6</div>
-    //     </div>
-    //     <div className={styles.download}>
-    //       <Button>製品詳細（PDF）</Button>
-    //     </div>
-    //   </div>
-    // </div>
   )
 }
 
