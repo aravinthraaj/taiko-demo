@@ -1,6 +1,8 @@
+import Header from "@/components/atoms/Header/Header"
 import "./globals.scss"
 import type { Metadata } from "next"
 import { Noto_Sans, Cormorant_Garamond } from "next/font/google"
+import Footer from "@/components/atoms/Footer/Footer"
 
 const noto = Noto_Sans({
   variable: "--font-noto",
@@ -21,7 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${noto.variable}`}>
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )

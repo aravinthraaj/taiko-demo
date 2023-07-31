@@ -41,7 +41,6 @@ export default function Home() {
   ]
   return (
     <main className={styles.main}>
-      <Header />
       <HeroSection />
       <StrengthSection />
       <HomeSection
@@ -64,7 +63,6 @@ export default function Home() {
         }
         link={"/"}
       />
-      <Footer />
     </main>
   )
 }
