@@ -3,6 +3,7 @@
   padding: 80px 0px;
   background-color: $color-gray-dark;
   color: $color-white;
+  font-family: $noto;
   @include flex-center(row);
   .footer {
     width: 1310px;
