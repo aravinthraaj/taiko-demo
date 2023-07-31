@@ -20,7 +20,9 @@
     .description {
       width: 100%;
       @include flex-center(column, 40px);
-
+      .mobileBr {
+        display: none;
+      }
       .pink {
         width: 100%;
         height: 56px;
@@ -39,6 +41,10 @@
     }
     .scroll {
       @include flex-center(column, 8px);
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 160%;
+      letter-spacing: 4.8px;
       .line {
         height: 64px;
         width: 1px;
@@ -71,7 +77,9 @@
       .description {
         width: 100%;
         @include flex-center(column, 40px);
-
+        .mobileBr {
+          display: unset;
+        }
         .pink {
           width: 100%;
           height: 56px;

@@ -1,7 +1,7 @@
 .strengthCard {
   width: 100%;
   position: relative;
-  height: 600px;
+  height: 480px;
   .overlayWrapper {
     position: absolute;
     height: 100%;
@@ -23,11 +23,11 @@
         letter-spacing: 7.2px;
       }
       .title {
-        max-width: 310px;
-
+        // max-width: 310px;
         font-size: $font-size-xl;
         font-weight: $font-weight-medium;
         letter-spacing: 9.6px;
+        margin: 0px;
       }
       .description {
         max-width: 430px;
