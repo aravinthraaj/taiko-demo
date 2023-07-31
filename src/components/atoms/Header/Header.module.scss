@@ -1,0 +1,20 @@
+.headerWrapper {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 5;
+  .header {
+    height: 64px;
+    padding: 14px 80px;
+    background-color: rgba($color-white, 0.85);
+    @include flex-center();
+    justify-content: space-between;
+    nav {
+      @include flex-center(row, 120px);
+      a {
+        text-decoration: none;
+        color: $color-black;
+      }
+    }
+  }
+}
