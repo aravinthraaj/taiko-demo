@@ -1,0 +1,40 @@
+.strengthCard {
+  width: 100%;
+  position: relative;
+  height: 600px;
+  .overlayWrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    @include flex-center();
+    color: white;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.65) 65%,
+      rgba(0, 0, 0, 0.65) 65%
+    );
+    .overlay {
+      @include flex-center(column, 40px);
+      text-align: center;
+      .number {
+        max-width: 310px;
+        font-size: $font-size-lg;
+        font-weight: $font-weight-medium;
+        letter-spacing: 7.2px;
+      }
+      .title {
+        max-width: 310px;
+
+        font-size: $font-size-xl;
+        font-weight: $font-weight-medium;
+        letter-spacing: 9.6px;
+      }
+      .description {
+        max-width: 430px;
+
+        font-size: $font-size-md;
+        font-weight: $font-weight-regular;
+      }
+    }
+  }
+}
