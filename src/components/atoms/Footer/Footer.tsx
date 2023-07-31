@@ -16,9 +16,9 @@ const Footer = () => {
         <div className={styles.footerLinks}>
           <nav>
             <Link href={"/"}>ホーム</Link>
-            <Link href={"/"}>サービス内容</Link>
-            <Link href={"/"}>会社概要</Link>
-            <Link href={"/"}>採用情報</Link>
+            <Link href={"/service"}>サービス内容</Link>
+            <Link href={"/company"}>会社概要</Link>
+            <Link href={"/recruit"}>採用情報</Link>
           </nav>
         </div>
         <div className={styles.companyProfile}>

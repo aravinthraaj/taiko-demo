@@ -44,7 +44,7 @@ export default function Home() {
       <HomeSection
         title="サービス内容"
         description="トップクラスのクレーンを手配・運搬・作業まで一貫して行います。トップクラスのクレーンを手配・運搬・作業まで一貫して行います。トップクラスのクレーンを手配・運搬・作業まで一貫して行います。"
-        link="/"
+        link="/service"
       />
       <HomeSection
         direction="alternate"
@@ -52,14 +52,14 @@ export default function Home() {
         description={
           "トップクラスのクレーンを手配・運搬・作業まで一貫して行います。トップクラスのクレーンを手配・運搬・作業まで一貫して行います。トップクラスのクレーンを手配・運搬・作業まで一貫して行います。"
         }
-        link={"/"}
+        link={"/company"}
       />
       <HomeSection
         title={"採用情報"}
         description={
           "トップクラスのクレーンを手配・運搬・作業まで一貫して行います。トップクラスのクレーンを手配・運搬・作業まで一貫して行います。トップクラスのクレーンを手配・運搬・作業まで一貫して行います。"
         }
-        link={"/"}
+        link={"/recruit"}
       />
     </main>
   )
