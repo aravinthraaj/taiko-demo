@@ -1,0 +1,49 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  top: 0px;
+  color: white;
+  position: relative;
+
+  .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: white;
+    @include flex-center(column, 64px);
+    justify-content: flex-end;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 26.56%,
+      rgba(0, 0, 0, 0.75) 71.35%
+    );
+    .description {
+      width: 100%;
+      @include flex-center(column, 40px);
+
+      .pink {
+        width: 100%;
+        height: 56px;
+        background-color: $color-pink;
+        text-align: center;
+        @include flex-center(column);
+        justify-content: end;
+        font-size: $font-size-xxl;
+        letter-spacing: 12px;
+      }
+      p {
+        text-align: center;
+        color: rgba($color-white, 0.8);
+        margin: 0px;
+      }
+    }
+    .scroll {
+      @include flex-center(column, 8px);
+      .line {
+        height: 64px;
+        width: 1px;
+        background-color: $color-white;
+      }
+    }
+  }
+}
