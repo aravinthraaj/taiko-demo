@@ -8,7 +8,9 @@ const page = () => {
       <SubHeroSection
         title="Service"
         subtitle="サービス内容"
-        description="最適なクレーンで、安全・確実に大切な荷物を吊り上げます"
+        description={
+          "最適なクレーンで、安全・確実に大切な荷物 \n を吊り上げます"
+        }
       />
       <ServiceSection />
     </div>

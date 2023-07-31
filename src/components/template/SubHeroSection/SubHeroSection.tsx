@@ -31,7 +31,12 @@ const SubHeroSection = ({
             <div className={styles.subTitle}>{subtitle}</div>
           </div>
           <Divider variant="pink" />
-          <div className={styles.description}>{description}</div>
+          <p className={`${styles.description} ${styles.desktop}`}>
+            {description}
+          </p>
+          <pre className={`${styles.description} ${styles.mobile}`}>
+            {description}
+          </pre>
         </div>
       </div>
     </div>

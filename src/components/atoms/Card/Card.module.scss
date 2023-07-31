@@ -49,12 +49,12 @@
         font-weight: $font-weight-medium;
         padding: 10px;
         .weight {
-          font-size: $font-size-md;
-          letter-spacing: 6px;
+          font-size: $font-size-sm;
+          letter-spacing: 4.8px;
         }
         .model {
-          font-size: 14px;
-          letter-spacing: 0.7px;
+          font-size: 10px;
+          letter-spacing: 0.5px;
         }
       }
       .download {

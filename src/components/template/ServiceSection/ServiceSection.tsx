@@ -17,7 +17,6 @@ const ServiceSection = () => {
         <ModelList data={allTerrainCranes} title="オールテレーンクレーン" />
         <ModelList data={roughTerrainCranes} title="ラフタークレーン" />
         <ModelList data={others} title="その他" />
-
         {!isMobile && (
           <div className={styles.notes}>
             ※クレーン部材の運搬や組付・解体は、関連会社（株）大弘重機運輸を含め、グループ一体で行います

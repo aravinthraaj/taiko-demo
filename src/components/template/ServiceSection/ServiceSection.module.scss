@@ -29,7 +29,7 @@
     .serviceSectionContainer {
       width: 100%;
       max-width: 346px;
-      @include flex-center(column, 80px);
+      @include flex-center(column, 64px);
       .title {
         font-size: $font-size-md;
         font-weight: $font-weight-medium;

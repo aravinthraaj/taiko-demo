@@ -17,9 +17,15 @@ const HeroSection = () => {
       <div className={styles.overlay}>
         <Logo />
         <div className={styles.description}>
-          <div className={styles.pink}>トップクラスの大型重機エキスパート</div>
+          <div className={styles.pink}>
+            トップクラスの
+            <br />
+            大型重機エキスパート
+          </div>
           <p>
-            三河エリア随一の総トン数1,800t超＜2023/7月＞を誇り、
+            三河エリア随一の
+            <br />
+            総トン数1,800t超＜2023/7月＞を誇り、
             <br />
             多様なクレーンニーズにお応えします
           </p>

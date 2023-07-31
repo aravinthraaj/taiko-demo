@@ -38,7 +38,6 @@
       padding-right: 64px;
       padding-top: 40px;
       padding-bottom: 40px;
-
       max-width: 100%;
       @include flex-center(column, 32px);
       position: relative;
@@ -51,7 +50,7 @@
       .imageWrapper {
         position: relative;
         flex: unset;
-        height: 300px;
+        height: 200px;
         width: 100%;
       }
       .details {
