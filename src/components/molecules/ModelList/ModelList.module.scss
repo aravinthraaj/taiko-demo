@@ -1,0 +1,12 @@
+.modelListWrapper {
+  width: 100%;
+  font-family: $noto;
+
+  @include flex-center(column, 48px);
+  .modelList {
+    display: grid;
+    width: 1280px;
+    grid-template-columns: repeat(3, 400px);
+    gap: 40px;
+  }
+}

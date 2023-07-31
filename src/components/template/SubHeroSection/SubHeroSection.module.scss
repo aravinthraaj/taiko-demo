@@ -1,0 +1,45 @@
+.subHeroSection {
+  height: 50vh;
+  position: relative;
+  margin-top: 64px;
+  // max-width: 1200px;
+  font-family: $noto;
+  text-align: center;
+
+  .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: white;
+    padding: 200px 0px;
+    @include flex-center(column);
+    background: linear-gradient(
+      0deg,
+      rgba(245, 245, 245, 0.7) 0%,
+      rgba(245, 245, 245, 0.7) 100%
+    );
+    .overlayContainer {
+      width: 1200px;
+      max-width: 1200px;
+      @include flex-center(column, 36px);
+      .titleWrapper {
+        @include flex-center(column, 8px);
+        .title {
+          font-size: $font-size-xxl;
+          font-weight: $font-weight-medium;
+          letter-spacing: 12px;
+          color: $color-pink;
+        }
+        .subTitle {
+          font-size: $font-size-lg;
+          font-weight: $font-weight-medium;
+          letter-spacing: 7.2px;
+          color: $color-black;
+        }
+      }
+      .description {
+        color: $color-black;
+      }
+    }
+  }
+}

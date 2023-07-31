@@ -1,7 +1,5 @@
 import styles from "./page.module.scss"
 import vehicleImage from "@Images/vehicle.png"
-import Footer from "@/components/atoms/Footer/Footer"
-import Header from "@/components/atoms/Header/Header"
 import HeroSection from "@/components/template/HeroSection/HeroSection"
 import StrengthSection from "@/components/template/StrengthSection/StrengthSection"
 import HomeSection from "@/components/template/HomeSection/HomeSection"
