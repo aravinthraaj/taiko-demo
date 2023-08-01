@@ -10,8 +10,14 @@
     max-width: 1310px;
     @include flex-center(row, 120px);
     position: relative;
+    &.mobile {
+      display: none;
+    }
     &.alternate {
       @include flex-center(row-reverse, 120px);
+      &.mobile {
+        display: none;
+      }
     }
     &:after {
       content: " ";
@@ -56,7 +62,13 @@
     background-color: $color-gray;
     width: 100%;
     z-index: 5;
+    &.mobile {
+      display: unset;
+    }
     @include flex-center();
+    &.desktop {
+      display: none;
+    }
     &.alternate {
       background-color: $color-white;
     }
@@ -83,7 +95,7 @@
         position: absolute;
         left: 50%;
         transform: translate(-50%);
-        z-index: -1;
+        z-index: 1;
       }
       .imageWrapper {
         position: relative;
@@ -95,6 +107,8 @@
       .details {
         flex: unset;
         width: 300px;
+        z-index: 5;
+        
         .text {
           border-bottom: 8px solid $color-pink;
           font-size: 20px;
@@ -111,8 +125,71 @@
         }
         a {
           text-decoration: none;
+          z-index: 5;
         }
       }
     }
   }
+
+  // .homeSection {
+  //   background-color: $color-gray;
+  //   width: 100%;
+  //   @include flex-center();
+  //   &.alternate {
+  //     background-color: $color-white;
+  //   }
+  //   .detailsWrapper {
+  //     padding: 200px 0px;
+  //     max-width: 1310px;
+  //     @include flex-center(row, 120px);
+  //     position: relative;
+  //     &.desktop {
+  //       display: none;
+  //     }
+  //     &.mobile {
+  //       display: unset;
+  //     }
+  //     &.alternate {
+  //       @include flex-center(row-reverse, 120px);
+  //       &.desktop {
+  //         display: none;
+  //       }
+  //     }
+  //     &:after {
+  //       content: " ";
+  //       height: 100%;
+  //       width: 280px;
+  //       background-color: $color-pink;
+  //       display: block;
+  //       position: absolute;
+  //       left: 50%;
+  //       transform: translate(-50%);
+  //       top: 0px;
+  //     }
+  //     .imageWrapper {
+  //       position: relative;
+  //       flex: 63%;
+  //       height: 440px;
+  //       z-index: 1;
+  //     }
+  //     .details {
+  //       flex: 37%;
+  //       .text {
+  //         letter-spacing: 9.6px;
+  //         border-bottom: 8px solid $color-pink;
+  //         font-weight: 600;
+  //         font-family: $noto;
+  //       }
+  //       p {
+  //         font-size: $font-size-base;
+  //         font-weight: $font-weight-regular;
+  //         letter-spacing: 0.8px;
+  //         color: rgba($color-black, 0.8);
+  //       }
+  //       a {
+  //         text-decoration: none;
+  //       }
+  //     }
+  //   }
+  // }
 }

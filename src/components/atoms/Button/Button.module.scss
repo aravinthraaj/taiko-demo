@@ -36,10 +36,10 @@
   .secondary {
     background-color: transparent;
     padding: 0px;
-    @include font($font-size-xs, $noto, $font-weight-regular);
+    @include font($font-size-base, $noto, $font-weight-medium);
     @include flex-center(row, 8px);
     border: none;
     cursor: pointer;
-    letter-spacing: 0.6px;
+    letter-spacing: 4.8px;
   }
 }

@@ -3,6 +3,8 @@ import SubHeroSection from "@/components/template/SubHeroSection/SubHeroSection"
 import React from "react"
 import styles from "./recruit.module.scss"
 import Button from "@/components/atoms/Button/Button"
+import recruitImage from "@Images/recruit.png"
+
 
 const page = () => {
   return (
@@ -11,6 +13,7 @@ const page = () => {
         title={"Recruit"}
         subtitle={"採用情報"}
         description={"大事にする \n（お客・社員・機械・車両・道具）"}
+        imageUrl={recruitImage}
       />
       <div className={styles.recruitSectionWrapper}>
         <RecruitSection
