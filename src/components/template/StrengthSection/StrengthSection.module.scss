@@ -10,10 +10,13 @@
     .title {
       font-size: $font-size-xxl;
       letter-spacing: 12px;
+      font-weight: $font-weight-medium;
     }
     .subTitle {
       font-size: $font-size-lg;
       letter-spacing: 7.2px;
+      font-weight: 600;
+      line-height: 160%;
     }
   }
   .strengthCardWrapper {

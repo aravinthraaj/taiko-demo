@@ -19,12 +19,12 @@ const HeroSection = () => {
         <div className={styles.description}>
           <div className={styles.pink}>
             トップクラスの
-            <br className={styles.mobileBr}/>
+            <br className={styles.mobileBr} />
             大型重機エキスパート
           </div>
           <p>
             三河エリア随一の
-            <br className={styles.mobileBr}/>
+            <br className={styles.mobileBr} />
             総トン数1,800t超＜2023/7月＞を誇り、
             <br />
             多様なクレーンニーズにお応えします

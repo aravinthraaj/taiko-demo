@@ -28,10 +28,11 @@
         font-weight: $font-weight-medium;
         letter-spacing: 9.6px;
         margin: 0px;
+        font-family: $noto;
       }
       .description {
         max-width: 430px;
-
+        letter-spacing: 1px;
         font-size: $font-size-md;
         font-weight: $font-weight-regular;
       }
@@ -61,7 +62,7 @@
         text-align: center;
         .title {
           max-width: 310px;
-
+          font-family: $noto;
           font-size: $font-size-md;
           font-weight: $font-weight-medium;
           letter-spacing: 6px;

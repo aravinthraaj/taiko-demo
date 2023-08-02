@@ -46,8 +46,9 @@ const page = () => {
                 <br className={styles.mobileBr} />
                 FAX　0563-62-5508
                 <br />
-                【吉良配車センター】 TEL　0563-35-3800
-                <br />
+                【吉良配車センター】
+                <br /> TEL　0563-35-3800　
+                <br className={styles.mobileBr} />
                 FAX　0563-35-3208
               </p>
             </li>
