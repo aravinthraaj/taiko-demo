@@ -3,7 +3,7 @@
   width: 100%;
   @include flex-center();
   .detailsWrapper {
-    padding: 200px 0px;
+    padding: 120px 0px;
     max-width: 1310px;
     @include flex-center(row, 120px);
     position: relative;

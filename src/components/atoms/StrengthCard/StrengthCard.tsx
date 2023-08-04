@@ -19,7 +19,7 @@ const StrengthCard = ({ number, title, description }: StrengthCardProps) => {
         <div className={styles.overlay}>
           {!isMobile && <div className={styles.number}>{number}</div>}
           <pre className={styles.title}>{title}</pre>
-          <div className={styles.description}>{description}</div>
+          <pre className={styles.description}>{description}</pre>
         </div>
       </div>
     </div>

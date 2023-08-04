@@ -49,6 +49,15 @@ const Button: FC<ButtonProps> = ({
             )}
           </>
         )
+      case "recruit":
+        return (
+          <>
+            {children}
+            {!isMobile && (
+              <Image src={RIGHT_ARROW} alt="pdf icon" width={32} height={32} />
+            )}
+          </>
+        )
       default:
         return children
     }

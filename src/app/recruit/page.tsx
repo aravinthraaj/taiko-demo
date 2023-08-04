@@ -34,7 +34,7 @@ const page = () => {
         />
       </div>
       <div className={styles.careersPage}>
-        <Button variant="default">リクルートページへ</Button>
+        <Button variant="recruit">リクルートページへ</Button>
       </div>
     </div>
   )

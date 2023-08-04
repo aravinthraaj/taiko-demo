@@ -4,7 +4,7 @@
   color: $color-white;
   cursor: pointer;
   padding: 8px 16px;
-  @include font($font-size-xs, $noto, $font-weight-regular);
+  @include font($font-size-base, $noto, $font-weight-medium);
   @include flex-center(row, 8px);
   letter-spacing: 4.8px;
   box-shadow: $box-shadow-normal;
@@ -18,6 +18,22 @@
   border: none;
   cursor: pointer;
   letter-spacing: 4.8px;
+  color: $color-black;
+}
+
+.recruit {
+  background-color: $color-pink;
+  border: none;
+  color: $color-white;
+  cursor: pointer;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+  letter-spacing: 7.2px;
+  padding: 16px 32px;
+  box-shadow: $box-shadow-normal;
+  @include flex-center(row, 40px);
 }
 
 @media (max-width: $mobile) {
@@ -41,5 +57,6 @@
     border: none;
     cursor: pointer;
     letter-spacing: 4.8px;
+    color: $color-black;
   }
 }

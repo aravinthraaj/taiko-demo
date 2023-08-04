@@ -40,7 +40,7 @@
             text-wrap: wrap;
             max-width: 695px;
             width: 695px;
-            .mobileBr{
+            .mobileBr {
               display: none;
             }
           }
@@ -63,6 +63,16 @@
       font-weight: $font-weight-medium;
       letter-spacing: 12px;
       text-align: center;
+    }
+    .titlesWrapper {
+      @include flex-center(column);
+      .subTitle {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+        letter-spacing: 0.8px;
+      }
     }
     .description {
       max-width: 800px;
@@ -127,7 +137,7 @@
               font-size: 14px;
               letter-spacing: 0.7px;
               font-weight: 400;
-              .mobileBr{
+              .mobileBr {
                 display: unset;
               }
             }
