@@ -119,7 +119,7 @@ const page = () => {
           <Image src={PlaceholderImage} alt="owner" fill />
         </div>
         <div className={styles.titlesWrapper}>
-          <div className={styles.subTitle}>おおたけ　ああああ</div>
+          <div className={styles.subTitle}>おおだけ　きみひさ</div>
           <div className={styles.name}>大嶽　公寿</div>
         </div>
         <div className={styles.description}>

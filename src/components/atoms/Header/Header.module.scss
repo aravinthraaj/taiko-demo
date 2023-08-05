@@ -13,6 +13,9 @@
     justify-content: space-between;
     nav {
       @include flex-center(row, 120px);
+      .active {
+        color: $color-pink;
+      }
       a {
         text-decoration: none;
         color: $color-black;

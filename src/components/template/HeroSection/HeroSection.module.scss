@@ -29,10 +29,12 @@
         background-color: $color-pink;
         text-align: center;
         @include flex-center(column);
-        justify-content: end;
-        font-size: $font-size-xxl;
-        letter-spacing: 12px;
-        font-weight: $font-weight-medium;
+        justify-content: center;
+        p {
+          font-size: $font-size-xxl;
+          letter-spacing: 12px;
+          font-weight: $font-weight-medium;
+        }
       }
       p {
         text-align: center;
@@ -92,8 +94,10 @@
           text-align: center;
           @include flex-center(column);
           justify-content: end;
-          font-size: $font-size-lg;
-          letter-spacing: 7.2px;
+          p {
+            font-size: $font-size-lg;
+            letter-spacing: 7.2px;
+          }
         }
         p {
           text-align: center;

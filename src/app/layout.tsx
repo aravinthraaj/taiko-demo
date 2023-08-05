@@ -22,6 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <title>大弘重機</title>
       <body className={`${noto.variable}`}>
         <Header />
         {children}

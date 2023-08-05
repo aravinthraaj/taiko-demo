@@ -18,9 +18,11 @@ const HeroSection = () => {
         <Logo />
         <div className={styles.description}>
           <div className={styles.pink}>
-            トップクラスの
-            <br className={styles.mobileBr} />
-            大型重機エキスパート
+            <p>
+              トップクラスの
+              <br className={styles.mobileBr} />
+              大型重機エキスパート
+            </p>
           </div>
           <p>
             三河エリア随一の

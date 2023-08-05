@@ -7,9 +7,11 @@ import BurgerMenu from "@Icons/burger-menu.svg"
 import Image from "next/image"
 import MobileNav from "../MobileNav/MobileNav"
 import CloseButton from "@Icons/close.svg"
+import { usePathname } from "next/navigation"
 
 const Header = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
+  const pathname = usePathname()
   const closeModal = () => {
     setNavbarOpen(false)
   }
@@ -21,10 +23,27 @@ const Header = () => {
       <header className={styles.header}>
         <Logo variant="header" />
         <nav>
-          <Link href={"/"}>ホーム</Link>
-          <Link href={"/service"}>サービス内容</Link>
-          <Link href={"/company"}>会社概要</Link>
-          <Link href={"/recruit"}>採用情報</Link>
+          <Link href={"/"} className={pathname == "/" ? styles.active : ""}>
+            ホーム
+          </Link>
+          <Link
+            href={"/service"}
+            className={pathname == "/service/" ? styles.active : ""}
+          >
+            サービス内容
+          </Link>
+          <Link
+            href={"/company"}
+            className={pathname == "/company/" ? styles.active : ""}
+          >
+            会社概要
+          </Link>
+          <Link
+            href={"/recruit"}
+            className={pathname == "/recruit/" ? styles.active : ""}
+          >
+            採用情報
+          </Link>
         </nav>
 
         <div className={styles.burgerMenu} onClick={toggle}>
