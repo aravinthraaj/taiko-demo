@@ -31,7 +31,6 @@
         align-items: flex-end;
         text-justify: auto;
         text-align: justify;
-
       }
     }
     &:after {
@@ -72,7 +71,7 @@
       z-index: 5;
       padding-left: 16px;
       p {
-        font-size: $font-size-base;
+        font-size: 14px;
         font-weight: $font-weight-regular;
         letter-spacing: 0.8px;
         color: rgba($color-black, 0.8);

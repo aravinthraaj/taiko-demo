@@ -5,12 +5,15 @@ import vehicleImage from "@Images/vehicle.png"
 
 import Button from "@/components/atoms/Button/Button"
 import Link from "next/link"
+import { StaticImport } from "next/dist/shared/lib/get-img-props"
 
 interface HomeSectionProps {
   direction?: "regular" | "alternate"
   title: string
   description: string
   link: string
+  imageUrl: string | StaticImport
+
 }
 
 const MobileHomeSection = ({
