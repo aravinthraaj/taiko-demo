@@ -19,6 +19,7 @@ interface HomeSectionProps {
 const MobileHomeSection = ({
   direction = "regular",
   title,
+  imageUrl,
   description,
   link,
 }: HomeSectionProps) => {
@@ -29,7 +30,7 @@ const MobileHomeSection = ({
           <div className={styles.text}>{title}</div>
         </div>
         <div className={styles.imageWrapper}>
-          <Image src={vehicleImage} alt="image" fill />
+          <Image src={imageUrl} alt="image" fill />
         </div>
         <div className={styles.details}>
           <p>{description}</p>
