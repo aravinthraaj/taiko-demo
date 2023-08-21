@@ -19,6 +19,7 @@ const StrengthSection = () => {
           description={
             "三河で最大の油圧移動式クレーンを\n保有するのは私たちです"
           }
+          subtitle="※東京商工リサーチ調べ（2023/8月）"
           image={Strength1}
         />
         <StrengthCard

@@ -1,19 +1,28 @@
 import Image from "next/image"
 import React from "react"
-import vehicle from "@Images/hero.png"
+import heroImage1 from "@Images/hero.webp"
+import heroImage2 from "@Images/hero2.webp"
+import heroImage3 from "@Images/hero3.webp"
+
 import styles from "./HeroSection.module.scss"
 import Logo from "@/components/atoms/Logo/Logo"
+import Slider from "react-slick"
+import Carousel from "@/components/atoms/Carousel/Carousel"
 
 const HeroSection = () => {
+  const images = [heroImage1, heroImage2, heroImage3]
+
   return (
     <div className={styles.hero}>
-      <Image
+      <Carousel images={images} />
+
+      {/* <Image
         src={vehicle}
         alt="background"
         className={styles.heroimage}
         fill
         objectFit="cover"
-      />
+      /> */}
       <div className={styles.overlay}>
         <Logo />
         <div className={styles.description}>

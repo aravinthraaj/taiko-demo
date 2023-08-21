@@ -12,16 +12,19 @@ interface RecruitSectionProps {
 const RecruitSection = ({
   direction = "regular",
   description,
-  image
+  image,
 }: RecruitSectionProps) => {
   return (
     <div className={`${styles.recruitSection}`}>
       <section className={`${styles.detailsWrapper} ${styles[direction]}`}>
         <div className={styles.imageWrapper}>
-          <Image src={image} alt="image" fill />
+          <Image src={image} alt="image" objectFit="cover" />
         </div>
         <div className={styles.details}>
-          <p>{description}</p>
+          <p className={styles.desktop}>
+            <pre>{description}</pre>
+          </p>
+          <p className={styles.mobile}>{description}</p>
         </div>
       </section>
     </div>

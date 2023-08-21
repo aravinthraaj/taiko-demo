@@ -30,6 +30,13 @@
         margin: 0px;
         font-family: $noto;
       }
+      .subtitle {
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 15px */
+        letter-spacing: 0.5px;
+      }
       .description {
         max-width: 430px;
         letter-spacing: 1px;

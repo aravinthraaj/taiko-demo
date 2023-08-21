@@ -9,38 +9,6 @@ import { isMobile } from "react-device-detect"
 import MobileHomeSection from "@/components/template/MobileHomeSection/MobileHomeSection"
 
 export default function Home() {
-  const vehicleList = [
-    {
-      imageUrl: vehicleImage,
-      weight: "400t",
-      model: "タダノ　ATF400G6",
-      pdfUrl: "https://www.google.com/",
-    },
-    {
-      imageUrl: vehicleImage,
-      weight: "250t",
-      model: "リープヘル　LTM1250NX",
-      pdfUrl: "https://www.google.com/",
-    },
-    {
-      imageUrl: vehicleImage,
-      weight: "220t",
-      model: "タダノ　ATF220N5",
-      pdfUrl: "https://www.google.com/",
-    },
-    {
-      imageUrl: vehicleImage,
-      weight: "160t",
-      model: "リープヘル　LTM1160NX",
-      pdfUrl: "https://www.google.com/",
-    },
-    {
-      imageUrl: vehicleImage,
-      weight: "100t",
-      model: "タダノ　ATF100G4",
-      pdfUrl: "https://www.google.com/",
-    },
-  ]
   return (
     <main className={styles.main}>
       <HeroSection />

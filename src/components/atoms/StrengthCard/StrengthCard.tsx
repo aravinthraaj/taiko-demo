@@ -10,12 +10,14 @@ interface StrengthCardProps {
   number: string
   title: string
   description: string
+  subtitle?: string
   image: string | StaticImport
 }
 
 const StrengthCard = ({
   number,
   title,
+  subtitle,
   description,
   image,
 }: StrengthCardProps) => {
@@ -25,7 +27,10 @@ const StrengthCard = ({
       <div className={styles.overlayWrapper}>
         <div className={styles.overlay}>
           {!isMobile && <div className={styles.number}>{number}</div>}
-          <pre className={styles.title}>{title}</pre>
+          <div className={styles.titleWrapper}>
+            <pre className={styles.title}>{title}</pre>
+            <pre className={styles.subtitle}>{subtitle}</pre>
+          </div>
           <pre className={styles.description}>{description}</pre>
         </div>
       </div>
