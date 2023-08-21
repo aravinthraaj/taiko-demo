@@ -3,7 +3,7 @@ import React from "react"
 import styles from "./company.module.scss"
 import Image from "next/image"
 import PlaceholderImage from "@Images/placeholder.png"
-import companyImage from "@Images/company.png"
+import companyImage from "@Images/company_profile.jpg"
 
 const page = () => {
   return (
@@ -11,7 +11,7 @@ const page = () => {
       <SubHeroSection
         title={"Company"}
         subtitle={"会社について"}
-        description={"大事にする \n（お客・社員・機械・車両・道具）"}
+        description={"お客様・社員・機械・車両・道具　を大事にする"}
         imageUrl={companyImage}
       />
       <div className={styles.companyProfile}>
@@ -116,20 +116,23 @@ const page = () => {
       <div className={styles.message}>
         <div className={styles.title}>代表挨拶</div>
         <div className={styles.imageWrapper}>
-          <Image src={PlaceholderImage} alt="owner" fill />
+          <Image src={companyImage} alt="owner" fill objectFit="cover" />
         </div>
         <div className={styles.titlesWrapper}>
           <div className={styles.subTitle}>おおだけ　きみひさ</div>
           <div className={styles.name}>大嶽　公寿</div>
         </div>
         <div className={styles.description}>
-          「ありがとう！うまくいったよ」と笑顔で感謝される、自分の仕事が役に立ってる充実感
+          　弊社ホームページをご覧頂き、ありがとうございます。 <br />
           <br />
-          毎日の何気ない仕事が、生きる支えとなり、ちょっぴり誇らしげに感じられる
+          先代創業者が昭和58年に事業開始して以来、常に『他社には無い技術・道具・車両で、より安全で効率的な作業を提供しよう』と心掛けてまいりました。おかげさまで、創業以来大きな事故もなく、幾多の経済的な苦境も乗り越え、小さいながらも三河エリアでは相応の存在感を発揮できるまでに成長することが出来ました、ありがとうございます。
           <br />
-          お取引先にも、 社員にも、喜んでもらえる
           <br />
-          そんな会社でありたいと思ってます
+          これも、我が事のようにご指導頂ける御客様や、様々な創意工夫で安全確実な作業を進める社員・オペレータが居たからこそ成しえたものであり、改めて御礼申し上げます
+          。今では保有総トン数としては三河エリアでNo.1となりましたが、それ以上に誇れるものは安全作業に徹する優秀なオペレータが数多く揃い、多数の御客様からご用命頂けていることであります
+          。<br />
+          <br />
+          これからも、地域に無くてはならない存在として、社会インフラの整備や企業活動の発展に貢献できるよう努めてまいりますので、引き続きご用命頂きますよう、宜しくお願い致します。
         </div>
       </div>
     </div>

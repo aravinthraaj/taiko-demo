@@ -31,7 +31,7 @@ const Card = ({ data }: { data: CardProps }) => {
         </div>
         <div className={styles.download}>
           <Link href={data.pdfUrl} target="_blank">
-            <Button>製品詳細（PDF）</Button>
+            <Button>製品詳細</Button>
           </Link>
         </div>
       </div>

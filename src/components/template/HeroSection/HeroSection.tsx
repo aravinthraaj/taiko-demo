@@ -1,6 +1,6 @@
 import Image from "next/image"
 import React from "react"
-import vehicle from "@Images/vehicle.png"
+import vehicle from "@Images/hero.png"
 import styles from "./HeroSection.module.scss"
 import Logo from "@/components/atoms/Logo/Logo"
 
@@ -25,10 +25,8 @@ const HeroSection = () => {
             </p>
           </div>
           <p>
-            三河エリア随一の
             <br className={styles.mobileBr} />
-            総トン数1,800t超＜2023/7月＞を誇り、
-            <br />
+            三河エリア随一の総トン数を誇り、 <br />
             多様なクレーンニーズにお応えします
           </p>
         </div>

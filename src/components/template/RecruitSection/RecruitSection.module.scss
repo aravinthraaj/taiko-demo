@@ -19,6 +19,7 @@
     .details {
       flex: 37%;
       p {
+        font-family: var(--font-noto);
         font-size: $font-size-base;
         font-weight: $font-weight-regular;
         letter-spacing: 0.8px;

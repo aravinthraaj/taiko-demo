@@ -1,8 +1,19 @@
 import vehicleImage from "@Images/vehicle.png"
+import ATF400G6Image from "@Images/vechiles_model/ATF400G6.png"
+import LTM1160NXImage from "@Images/vechiles_model/LTM1160NX.png"
+import ATF100G4Image from "@Images/vechiles_model/ATF100G4.png"
+
+import GR1000NImage from "@Images/vechiles_model/GR1000N.png"
+import GR700NImage from "@Images/vechiles_model/GR700N.png"
+import GR600N3Image from "@Images/vechiles_model/GR600N3.png"
+import GR160N4Image from "@Images/vechiles_model/GR160N4.png"
+import SL650RImage from "@Images/vechiles_model/SL650R.png"
+import SR250RImage from "@Images/vechiles_model/SR250R.png"
+
 
 export const allTerrainCranes = [
   {
-    imageUrl: vehicleImage,
+    imageUrl: ATF400G6Image,
     weight: "400t",
     model: "タダノ ATF400G6",
     pdfUrl: "https://www.tadano.co.jp/products/ac/atf400g/index.html",
@@ -21,20 +32,14 @@ export const allTerrainCranes = [
     pdfUrl: "https://www.tadano.co.jp/products/ac/atf-220n-5_1/index.html",
   },
   {
-    imageUrl: vehicleImage,
+    imageUrl: LTM1160NXImage,
     weight: "160t",
     model: "リープヘル LTM1160NX",
     pdfUrl:
       "https://www.liebherr.com/ja/jpn/%E8%A3%BD%E5%93%81/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%82%AF%E3%83%AC%E3%83%BC%E3%83%B3%E3%81%A8%E3%82%AF%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E3%82%AF%E3%83%AC%E3%83%BC%E3%83%B3/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%82%AF%E3%83%AC%E3%83%BC%E3%83%B3/%E3%83%AA%E3%83%BC%E3%83%97%E3%83%98%E3%83%AB%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%82%AF%E3%83%AC%E3%83%BC%E3%83%B3/ltm1160nx.html",
   },
   {
-    imageUrl: vehicleImage,
-    weight: "100t",
-    model: "タダノ ATF100G4",
-    pdfUrl: "https://www.tadano.co.jp/products/ac/atf100g/index.html",
-  },
-  {
-    imageUrl: vehicleImage,
+    imageUrl: ATF100G4Image,
     weight: "100t",
     model: "タダノ ATF100G4",
     pdfUrl: "https://www.tadano.co.jp/products/ac/atf100g/index.html",
@@ -43,44 +48,38 @@ export const allTerrainCranes = [
 
 export const roughTerrainCranes = [
   {
-    imageUrl: vehicleImage,
+    imageUrl: GR1000NImage,
     weight: "100t",
     model: "タダノ GR1000N",
     pdfUrl: "https://www.tadano.co.jp/products/rc/gr-1000n/index.html",
   },
   {
-    imageUrl: vehicleImage,
+    imageUrl: GR700NImage,
     weight: "70t",
     model: "タダノ GR700N",
     pdfUrl: "https://www.tadano.co.jp/products/rc/gr-700n/index.html",
   },
   {
-    imageUrl: vehicleImage,
+    imageUrl: SL650RImage,
     weight: "65t",
     model: "加藤 SL650R",
     pdfUrl:
       "https://www.kato-works.co.jp/products/roughter/pdf/SL/SL-650R_spec.pdf",
   },
   {
-    imageUrl: vehicleImage,
+    imageUrl: GR600N3Image,
     weight: "60t",
     model: "タダノ GR600N3",
     pdfUrl: "https://www.tadano.co.jp/service/data/documents/?id=31",
   },
   {
-    imageUrl: vehicleImage,
+    imageUrl: SR250RImage,
     weight: "25t",
-    model: "加藤 SR250Rf",
+    model: "加藤 SR250Rf, SR250R",
     pdfUrl: "https://www.kato-works.co.jp/profile/news/html/SR-250rf.html",
   },
   {
-    imageUrl: vehicleImage,
-    weight: "25t",
-    model: "加藤 SR250R",
-    pdfUrl: "https://www.kato-works.co.jp/profile/news/html/SR250R.html",
-  },
-  {
-    imageUrl: vehicleImage,
+    imageUrl: GR160N4Image,
     weight: "16t",
     model: "タダノ GR160N4",
     pdfUrl: "https://www.tadano.co.jp/service/data/documents/?id=44",

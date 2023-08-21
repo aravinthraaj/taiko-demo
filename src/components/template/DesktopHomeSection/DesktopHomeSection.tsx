@@ -1,9 +1,9 @@
 import React from "react"
 import HomeSection from "../HomeSection/HomeSection"
 import styles from "./DesktopHomeSection.module.scss"
-import serviceImage from "@Images/service.png"
-import companyImage from "@Images/company.png"
-import recruitImage from "@Images/recruit.png"
+import serviceImage from "@Images/service.jpg"
+import companyImage from "@Images/company_profile.jpg"
+import recruitImage from "@Images/recruitment_information.jpg"
 
 const DesktopHomeSection = () => {
   return (

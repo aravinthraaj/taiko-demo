@@ -1,7 +1,7 @@
 import ServiceSection from "@/components/template/ServiceSection/ServiceSection"
 import SubHeroSection from "@/components/template/SubHeroSection/SubHeroSection"
 import React from "react"
-import serviceImage from "@Images/service.png"
+import serviceImage from "@Images/service.jpg"
 
 const page = () => {
   return (
