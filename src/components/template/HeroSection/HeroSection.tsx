@@ -6,7 +6,6 @@ import heroImage3 from "@Images/hero3.webp"
 
 import styles from "./HeroSection.module.scss"
 import Logo from "@/components/atoms/Logo/Logo"
-import Slider from "react-slick"
 import Carousel from "@/components/atoms/Carousel/Carousel"
 
 const HeroSection = () => {
