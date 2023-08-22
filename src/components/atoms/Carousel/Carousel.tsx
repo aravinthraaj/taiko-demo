@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react'
-import Image from 'next/image'
-import { StaticImport } from 'next/dist/shared/lib/get-img-props'
-import styles from './Carousel.module.scss'
+"use client"
+import React, { useState, useEffect } from "react"
+import Image from "next/image"
+import { StaticImport } from "next/dist/shared/lib/get-img-props"
+import styles from "./Carousel.module.scss"
 
 interface FadeImageSliderProps {
   images: string[] | StaticImport[]
@@ -27,7 +28,7 @@ const Carousel: React.FC<FadeImageSliderProps> = ({ images }) => {
           key={index}
           style={{
             opacity: index === currentImageIndex ? 1 : 0,
-            transition: 'opacity 2s ease-in-out',
+            transition: "opacity 2s ease-in-out",
           }}
         >
           <div className={styles.imgWrapper}>
@@ -35,7 +36,8 @@ const Carousel: React.FC<FadeImageSliderProps> = ({ images }) => {
               src={image}
               alt={`Image ${index}`}
               fill
-              objectFit='cover'
+              // objectFit='cover'
+              style={{ objectFit: "cover" }}
             />
           </div>
         </div>

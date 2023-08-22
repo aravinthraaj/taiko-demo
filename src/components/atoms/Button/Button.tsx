@@ -7,7 +7,7 @@ import { RoundedRightArrow } from "@/assets/icons/RoundedRightArrow"
 import { PdfIcon } from "@/assets/icons/PdfIcon"
 import { RightArrow as RightArrowIcon } from "@/assets/icons/RightArrow"
 
-import { isMobile } from "react-device-detect"
+// import { isMobile } from "react-device-detect"
 
 import Image from "next/image"
 
@@ -49,20 +49,26 @@ const Button: FC<ButtonProps> = ({
             {/* <Image src={PDF_ICON} alt="pdf icon" width={20} height={20} /> */}
             <PdfIcon />
             {children}
-            {!isMobile && (
+            <div className={`${styles.desktop} ${styles.icon}`}>
+              <RightArrowIcon />
+            </div>
+            {/* {!isMobile && (
               // <Image src={RIGHT_ARROW} alt="pdf icon" width={20} height={20} />
               <RightArrowIcon />
-            )}
+            )} */}
           </>
         )
       case "recruit":
         return (
           <>
             {children}
-            {!isMobile && (
+            <div className={`${styles.desktop} ${styles.icon}`}>
+              <RightArrowIcon />
+            </div>
+            {/* {!isMobile && (
               // <Image src={RIGHT_ARROW} alt="pdf icon" width={32} height={32} />
               <RightArrowIcon />
-            )}
+            )} */}
           </>
         )
       default:

@@ -21,6 +21,8 @@
         font-size: $font-size-lg;
         font-weight: $font-weight-medium;
         letter-spacing: 7.2px;
+        &.desktop {
+        }
       }
       .title {
         // max-width: 310px;
@@ -67,6 +69,11 @@
       .overlay {
         @include flex-center(column, 24px);
         text-align: center;
+        .number {
+          &.desktop {
+            display: none;
+          }
+        }
         .title {
           max-width: 310px;
           font-family: $noto;

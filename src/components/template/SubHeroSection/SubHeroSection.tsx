@@ -16,7 +16,7 @@ const SubHeroSection = ({
   title,
   subtitle,
   description,
-  imageUrl
+  imageUrl,
 }: SubHeroSectionProps) => {
   return (
     <div className={styles.subHeroSection}>
@@ -25,7 +25,8 @@ const SubHeroSection = ({
         alt="background"
         className={styles.heroimage}
         fill
-        objectFit="cover"
+        // objectFit="cover"
+        style={{ objectFit: "cover" }}
       />
       <div className={styles.overlay}>
         <div className={styles.overlayContainer}>

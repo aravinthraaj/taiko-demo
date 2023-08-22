@@ -18,12 +18,17 @@ const RecruitSection = ({
     <div className={`${styles.recruitSection}`}>
       <section className={`${styles.detailsWrapper} ${styles[direction]}`}>
         <div className={styles.imageWrapper}>
-          <Image src={image} alt="image" objectFit="cover" />
+          <Image
+            src={image}
+            alt="image"
+            // objectFit="cover"
+            style={{ objectFit: "cover" }}
+          />
         </div>
         <div className={styles.details}>
-          <p className={styles.desktop}>
+          <div className={styles.desktop}>
             <pre>{description}</pre>
-          </p>
+          </div>
           <p className={styles.mobile}>{description}</p>
         </div>
       </section>

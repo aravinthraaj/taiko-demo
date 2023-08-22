@@ -22,7 +22,9 @@ const Card = ({ data }: { data: CardProps }) => {
           src={data.imageUrl}
           alt="vehicle image"
           fill
-          objectFit="contain"
+          // objectFit="cover"
+          style={{ objectFit: "cover" }}
+
         />
       </div>
       <div className={styles.detailsWrapper}>

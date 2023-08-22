@@ -81,7 +81,14 @@
   }
 }
 
+.icon{
+  display: flex;
+}
+
 @media (max-width: $mobile) {
+  .desktop {
+    display: none;
+  }
   .default {
     background-color: $color-pink;
     border: none;
@@ -93,6 +100,7 @@
     letter-spacing: 0.6px;
     box-shadow: $box-shadow-normal;
     transition: all 0s;
+
 
     svg {
       width: 20px;

@@ -116,7 +116,13 @@ const page = () => {
       <div className={styles.message}>
         <div className={styles.title}>代表挨拶</div>
         <div className={styles.imageWrapper}>
-          <Image src={companyImage} alt="owner" fill objectFit="cover" />
+          <Image
+            src={companyImage}
+            alt="owner"
+            fill
+            // objectFit="cover"
+            style={{ objectFit: "cover" }}
+          />
         </div>
         <div className={styles.titlesWrapper}>
           <div className={styles.subTitle}>おおだけ　きみひさ</div>

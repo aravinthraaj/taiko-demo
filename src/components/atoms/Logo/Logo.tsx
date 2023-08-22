@@ -12,11 +12,11 @@ const Logo = ({ variant = "main", size = "regular" }: LogoProps) => {
   const getvarinat = () => {
     switch (variant) {
       case "main":
-        return <Image src={LogoMain} alt="Logo Main" fill />
+        return <Image src={LogoMain} alt="Logo Main" fill priority/>
       case "header":
         return (
           <>
-            <Image src={LogoHeader} alt="Logo Main" fill/>
+            <Image src={LogoHeader} alt="Logo Main" fill priority/>
           </>
         )
     }
