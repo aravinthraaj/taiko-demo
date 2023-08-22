@@ -92,6 +92,13 @@
     @include flex-center(row, 8px);
     letter-spacing: 0.6px;
     box-shadow: $box-shadow-normal;
+    transition: all 0s;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      transition: all 0s;
+    }
   }
 
   .secondary {
@@ -103,5 +110,20 @@
     cursor: pointer;
     letter-spacing: 4.8px;
     color: $color-black;
+    transition: all 0s;
+
+    svg {
+      width: 40px;
+      height: 40px;
+      transition: all 0s;
+    }
+  }
+  .recruit {
+    font-size: 16px;
+    letter-spacing: 4.8px;
+    padding: 8px 24px;
+    box-shadow: $box-shadow-normal;
+    @include flex-center(row, 40px);
+    transition: all 0s;
   }
 }

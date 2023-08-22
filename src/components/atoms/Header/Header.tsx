@@ -21,7 +21,9 @@ const Header = () => {
   return (
     <div className={styles.headerWrapper}>
       <header className={styles.header}>
-        <Logo variant="header" />
+        <Link href={"/"} className={pathname == "/" ? styles.active : ""}>
+          <Logo variant="header" />
+        </Link>
         <nav>
           <Link href={"/"} className={pathname == "/" ? styles.active : ""}>
             ホーム

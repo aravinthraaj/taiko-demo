@@ -11,6 +11,7 @@ interface CardProps {
   weight: string
   model: string
   pdfUrl: string
+  price: string
 }
 
 const Card = ({ data }: { data: CardProps }) => {
@@ -28,6 +29,7 @@ const Card = ({ data }: { data: CardProps }) => {
         <div className={styles.details}>
           <div className={styles.weight}>{data.weight}</div>
           <div className={styles.model}>{data.model}</div>
+          <div className={styles.price}>{data.price}円～/日 </div>
         </div>
         <div className={styles.download}>
           <Link href={data.pdfUrl} target="_blank">

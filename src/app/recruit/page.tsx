@@ -6,6 +6,7 @@ import Button from "@/components/atoms/Button/Button"
 import recruitImage from "@Images/recruitment_information.jpg"
 import recruitImage1 from "@Images/recruitment_information_1.jpg"
 import recruitImage2 from "@Images/recruitment_information_2.jpg"
+import Link from "next/link"
 
 const page = () => {
   return (
@@ -38,7 +39,9 @@ const page = () => {
         />
       </div>
       <div className={styles.careersPage}>
-        <Button variant="recruit">リクルートページへ</Button>
+        <Link href="https://en-gage.net/taiko-juki/" target="_blank">
+          <Button variant="recruit">リクルートページへ</Button>
+        </Link>
       </div>
     </div>
   )

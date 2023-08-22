@@ -14,6 +14,8 @@
       display: none;
     }
     &.alternate {
+      max-width: 1310px;
+      width: 100%;
       @include flex-center(row-reverse, 120px);
       &.mobile {
         display: none;
@@ -38,6 +40,7 @@
     }
     .details {
       flex: 37%;
+      min-width: 440px;
       .text {
         border-bottom: 8px solid $color-pink;
         font-family: $noto;

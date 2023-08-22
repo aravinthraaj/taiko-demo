@@ -33,7 +33,7 @@ export default function Home() {
           <MobileHomeSection
             imageUrl={companyImage}
             direction="alternate"
-            title={"会社概要"}
+            title={"会社について"}
             description={
               "昭和58年の創業以来、地道に着実にクレーン作業を通じて社会インフラの整備や企業活動の発展に貢献してまいりました。"
             }

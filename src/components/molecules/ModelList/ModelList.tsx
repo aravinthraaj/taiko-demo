@@ -10,6 +10,7 @@ interface MobileListProps {
     weight: string
     model: string
     pdfUrl: string
+    price: string
   }[]
 }
 
