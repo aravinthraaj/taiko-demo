@@ -3,9 +3,9 @@ import SubHeroSection from "@/components/template/SubHeroSection/SubHeroSection"
 import React from "react"
 import styles from "./recruit.module.scss"
 import Button from "@/components/atoms/Button/Button"
-import recruitImage from "@Images/recruitment_information.webp"
-import recruitImage1 from "@Images/recruitment_information_1.webp"
-import recruitImage2 from "@Images/recruitment_information_2.webp"
+import recruitImage from "@Images/recruitment_information.jpg"
+import recruitImage1 from "@Images/recruitment_information_1.jpg"
+import recruitImage2 from "@Images/recruitment_information_2.jpg"
 import Link from "next/link"
 
 const page = () => {

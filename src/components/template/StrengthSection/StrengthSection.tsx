@@ -1,9 +1,9 @@
 import React from "react"
 import styles from "./StrengthSection.module.scss"
 import StrengthCard from "@/components/atoms/StrengthCard/StrengthCard"
-import Strength1 from "@Images/strength_1.webp"
-import Strength2 from "@Images/strength_2.webp"
-import Strength3 from "@Images/strength_3.webp"
+import Strength1 from "@Images/strength_1.jpg"
+import Strength2 from "@Images/strength_2.jpg"
+import Strength3 from "@Images/strength_3.png"
 
 const StrengthSection = () => {
   return (
