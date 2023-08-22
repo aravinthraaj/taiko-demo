@@ -3,7 +3,10 @@ import React, { FC, MouseEvent, ReactNode, ButtonHTMLAttributes } from "react"
 import styles from "./Button.module.scss"
 import PDF_ICON from "@Icons/pdf.svg"
 import RIGHT_ARROW from "@Icons/rightArrow.svg"
-import ROUNDED_RIGHT_ARROW from "@Icons/rounded-right-arrow.svg"
+import { RoundedRightArrow } from "@/assets/icons/RoundedRightArrow"
+import { PdfIcon } from "@/assets/icons/PdfIcon"
+import { RightArrow as RightArrowIcon } from "@/assets/icons/RightArrow"
+
 import { isMobile } from "react-device-detect"
 
 import Image from "next/image"
@@ -31,21 +34,24 @@ const Button: FC<ButtonProps> = ({
         return (
           <>
             {children}
-            <Image
+            {/* <Image
               src={ROUNDED_RIGHT_ARROW}
               alt="pdf icon"
               width={52}
               height={52}
-            />
+            /> */}
+            <RoundedRightArrow />
           </>
         )
       case "default":
         return (
           <>
-            <Image src={PDF_ICON} alt="pdf icon" width={20} height={20} />
+            {/* <Image src={PDF_ICON} alt="pdf icon" width={20} height={20} /> */}
+            <PdfIcon />
             {children}
             {!isMobile && (
-              <Image src={RIGHT_ARROW} alt="pdf icon" width={20} height={20} />
+              // <Image src={RIGHT_ARROW} alt="pdf icon" width={20} height={20} />
+              <RightArrowIcon />
             )}
           </>
         )
@@ -54,7 +60,8 @@ const Button: FC<ButtonProps> = ({
           <>
             {children}
             {!isMobile && (
-              <Image src={RIGHT_ARROW} alt="pdf icon" width={32} height={32} />
+              // <Image src={RIGHT_ARROW} alt="pdf icon" width={32} height={32} />
+              <RightArrowIcon />
             )}
           </>
         )

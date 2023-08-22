@@ -12,6 +12,9 @@ import serviceImage from "@Images/service.jpg"
 import companyImage from "@Images/company_profile.jpg"
 import recruitImage from "@Images/recruitment_information.jpg"
 
+// import RoundedArrow from "@Icons/rounded-right-arrow.svg"
+
+
 export default function Home() {
   return (
     <main className={styles.main}>
