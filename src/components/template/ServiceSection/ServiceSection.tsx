@@ -7,7 +7,6 @@ import {
   roughTerrainCranes,
   others,
 } from "@/constants/vehiclesList"
-import { isMobile } from "react-device-detect"
 
 const ServiceSection = () => {
   return (
